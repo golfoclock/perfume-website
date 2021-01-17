@@ -16,4 +16,39 @@ section {
 	justify-content: space-between;
 	align-items: center;
 	background: #f7f7f2;
+	transition: 1.0s;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo {
+	position: relative;
+	max-width: 80px;
+}
+
+header ul {
+	position: relative;
+	display: flex;
+}
+
+header ul li {
+	list-style: none;
+}
+
+header ul li a {
+	display: inline-block;
+	color: #000000;
+	font-weight: 400;
+	margin-left: 40px;
+	text-transform: uppercase;
+	text-decoration: none; 
 }
