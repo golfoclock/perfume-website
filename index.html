@@ -29,11 +29,11 @@
 			</div>
 		</div>
 		<ul class="thumb">
-			<li><img src="images/chanel2.png" onclick="imageSlider('images/chanel2.png')"></li>
-			<li><img src="images/chanel1.png" onclick="imageSlider('images/chanel1.png')"></li>
-			<li><img src="images/chanel2.png" onclick="imageSlider('images/chanel2.png')"></li>
-			<li><img src="images/chanel1.png" onclick="imageSlider('images/chanel1.png')"></li>
-			<li><img src="images/chanel2.png" onclick="imageSlider('images/chanel2.png')"></li>
+			<li><img src="images/chanel2.png" onclick="imageSlider('images/chanel2.png');changeBackground('#f7f7f2')"></li>
+			<li><img src="images/chanel1.png" onclick="imageSlider('images/chanel1.png'); changeBackground('#696969')"></li>
+			<li><img src="images/chanel2.png" onclick="imageSlider('images/chanel2.png'); changeBackground('#f7f7f2')"></li>
+			<li><img src="images/chanel1.png" onclick="imageSlider('images/chanel1.png'); changeBackground('#696969')"></li>
+			<li><img src="images/chanel2.png" onclick="imageSlider('images/chanel2.png'); changeBackground('#f7f7f2')"></li>
 		</ul>
 		<ul class="sci">
 			<li> <a href="https://www.instagram.com/chanelofficial/?hl=en"><img src="images/instagram-logo.png"></a></li>
@@ -45,6 +45,10 @@
 	<script type="text/javascript">
 		function imageSlider (anything) {
 			document.querySelector('.chanel').src = anything;
+		}
+		function changeBackground(color){
+			const sec = document.querySelector('.sec');
+			sec.style.background = color;
 		}
 	</script>
 	
