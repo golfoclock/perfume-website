@@ -29,11 +29,11 @@
 			</div>
 		</div>
 		<ul class="thumb">
-			<li><img src="images/chanel2.png"></li>
-			<li><img src="images/chanel1.png"></li>
-			<li><img src="images/chanel2.png"></li>
-			<li><img src="images/chanel1.png"></li>
-			<li><img src="images/chanel2.png"></li>
+			<li><img src="images/chanel2.png" onclick="imageSlider('images/chanel2.png')"></li>
+			<li><img src="images/chanel1.png" onclick="imageSlider('images/chanel1.png')"></li>
+			<li><img src="images/chanel2.png" onclick="imageSlider('images/chanel2.png')"></li>
+			<li><img src="images/chanel1.png" onclick="imageSlider('images/chanel1.png')"></li>
+			<li><img src="images/chanel2.png" onclick="imageSlider('images/chanel2.png')"></li>
 		</ul>
 		<ul class="sci">
 			<li> <a href="https://www.instagram.com/chanelofficial/?hl=en"><img src="images/instagram-logo.png"></a></li>
@@ -41,6 +41,12 @@
 			<li> <a href="https://www.facebook.com/chanel/"><img src="images/facebook-logo.png"></a></li>
 		</ul>
 	</section>
+
+	<script type="text/javascript">
+		function imageSlider (anything) {
+			document.querySelector('.chanel').src = anything;
+		}
+	</script>
 	
 </body>
 </html>
