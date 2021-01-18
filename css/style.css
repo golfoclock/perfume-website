@@ -9,7 +9,6 @@
 
 section {
 	position: relative;
-	width: 100%
 	min-height: 100vh;
 	padding: 100px;
 	display: flex;
@@ -103,9 +102,9 @@ header ul li a {
 	justify-content: flex-end;
 }
 
-/*.content .image-box img {
+.content .image-box img {
 	max-width: 50%;
-}*/
+}
 
 .chanel {
 	width: 50%;
