@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chanel No. 5</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<section class="sec">
+		<header>
+			<a href="#"><img src="images/logo.png" class="logo"></a>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Perfumes</a></li>
+				</ul>
+		</header>
+		<div class="content">
+			<div class="text-box">
+				<h2>Chanel <br>
+					<span> No. 5</span>
+				</h2>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+				<a href="#">View Additional Products</a>
+			</div>
+			<div class="image-box">
+				<img src="images/chanel2.png" class="chanel" alt="chanel perfume bottle">
+			</div>
+		</div>
+		<ul class="thumb">
+			<li><img src="images/chanel2.png" onclick="imageSlider('images/chanel2.png');changeBackground('#f7f7f2')"></li>
+			<li><img src="images/chanel1.png" onclick="imageSlider('images/chanel1.png'); changeBackground('#DE1738')"></li>
+			<li><img src="images/chanel2.png" onclick="imageSlider('images/chanel2.png'); changeBackground('#f7f7f2')"></li>
+			<li><img src="images/chanel1.png" onclick="imageSlider('images/chanel1.png'); changeBackground('#DE1738')"></li>
+			<li><img src="images/chanel2.png" onclick="imageSlider('images/chanel2.png'); changeBackground('#f7f7f2')"></li>
+		</ul>
+		<ul class="sci">
+			<li> <a href="https://www.instagram.com/chanelofficial/?hl=en"><img src="images/instagram-logo.png"></a></li>
+			<li> <a href="https://twitter.com/chanel?lang=en"><img src="images/twitter-logo.png"></a></li>
+			<li> <a href="https://www.facebook.com/chanel/"><img src="images/facebook-logo.png"></a></li>
+		</ul>
+	</section>
+
+	<script type="text/javascript">
+		function imageSlider (anything) {
+			document.querySelector('.chanel').src = anything;
+		}
+		function changeBackground(color){
+			const sec = document.querySelector('.sec');
+			sec.style.background = color;
+		}
+	</script>
+	
+</body>
+</html>
